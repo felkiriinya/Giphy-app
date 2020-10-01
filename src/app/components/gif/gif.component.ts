@@ -17,7 +17,7 @@ export class GifComponent implements OnInit {
   constructor(public httpService: HttpServiceService) { }
 
   ngOnInit(){
-      this.searchGif('yay');
+      this.searchGif('nature');
   }
 
 
