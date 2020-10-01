@@ -50,6 +50,7 @@ searchaGif(searchIt:string){
       data:[];
     }
     let searchEndpoint = "https://api.giphy.com/v1/gifs/search?api_key="+environment.apiKey;
+    // let searchEndpoint ="http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5"
 
     let promise = new Promise((resolve, reject)=>{
       this.http.get<Results>(searchEndpoint+"&q="+searchIt).toPromise().then(
